@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me</title>
+</head>
+<body>
+
+<h1 style="position:absolute; left:220px; top:175px;">Do you love me?</h1>
+<input type="button" value=" YES " onclick="love()" style="position:absolute; left:285px; top:235px;">
+<input type="button" id="btnNo" value="  NO  " onmouseover="changer()" style="position:absolute; left:360px; top:235px;">
+<h1 id="yes" style="position:absolute; left:600px; top:175px;color: red"></h1>
+</body>
+<script>
+    function changer(){
+        let chang = document.getElementById("btnNo");
+        chang.style.marginTop=Math.random()*500+"px";
+        chang.style.marginLeft=Math.random()*500+"px";
+    }
+    function love(){
+        let love = document.getElementById("yes");
+        love.innerHTML = "I Love You  <3";
+    }
+</script>
+</html>
